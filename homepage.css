@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.logo-home {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-logo {
+    width: 50px;
+}
+
+.homepage-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #4facfe;
+}
+
+.auth-buttons a {
+    margin-left: 10px;
+}
+
+.btn-login,
+.btn-signup {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-login {
+    background: #4facfe;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background: #3a8dde;
+}
+
+.btn-signup {
+    border: 2px solid #4facfe;
+    color: #4facfe;
+}
+
+.btn-signup:hover {
+    background: #4facfe;
+    color: #fff;
+}
+
+.nav {
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4facfe;
+}
+
+section {
+    background: #fff;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#subdashboard h2 {
+    margin-bottom: 15px;
+}
+
+#subdashboard p {
+    margin: 10px 0;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.quote-bar {
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+}
+
+#subdashboard a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #4facfe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#subdashboard a:hover {
+    background: #3a8dde;
+}
+
+.vision-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.vision-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+
+.banner-overlay h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.banner-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.banner-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #4facfe;
+    color: white;
+    text-decoration: none; 
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-btn:hover {
+    background: #3a8dde;
+    transform: scale(1.05);
+}
+
+.vision-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#info h2 {
+    margin-bottom: 10px;
+}
+
+.tac-list {
+    margin: 10px 0 15px 20px;
+}
+
+blockquote {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+#connect h3 {
+    margin-bottom: 10px;
+}
+
+.qr-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-buttons {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .qr-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
